@@ -221,11 +221,11 @@ public class StateMachineCouleur {
     public void afficherBouquetsRoses () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Rose")) {
-                article.setVisible(true);
+                article.setVisibleColor(true);
             }
             else
             {
-                article.setVisible(false);
+                article.setVisibleColor(false);
             }
         }        
     }
@@ -233,11 +233,11 @@ public class StateMachineCouleur {
     public void afficherBouquetsRouges () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Rouge")) {
-                article.setVisible(true);
+                article.setVisibleColor(true);
             }
             else
             {
-                article.setVisible(false);
+                article.setVisibleColor(false);
             }
         }  
     }
@@ -245,11 +245,11 @@ public class StateMachineCouleur {
     public void afficherBouquetsJaunes () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Jaune")) {
-                article.setVisible(true);
+                article.setVisibleColor(true);
             }
             else
             {
-                article.setVisible(false);
+                article.setVisibleColor(false);
             }
         }  
         
@@ -258,11 +258,11 @@ public class StateMachineCouleur {
     public void afficherBouquetsBlanches () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Blanche")) {
-                article.setVisible(true);
+                article.setVisibleColor(true);
             }
             else
             {
-                article.setVisible(false);
+                article.setVisibleColor(false);
             }
         }  
         
@@ -271,11 +271,11 @@ public class StateMachineCouleur {
     public void afficherBouquetsViolets () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Violet")) {
-                article.setVisible(true);
+                article.setVisibleColor(true);
             }
             else
             {
-                article.setVisible(false);
+                article.setVisibleColor(false);
             }
         }  
     }
@@ -283,11 +283,11 @@ public class StateMachineCouleur {
     public void afficherBouquetsVaries () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Varie")) {
-                article.setVisible(true);
+                article.setVisibleColor(true);
             }
             else
             {
-                article.setVisible(false);
+                article.setVisibleColor(false);
             }
         }  
         

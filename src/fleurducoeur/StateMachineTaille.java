@@ -98,33 +98,33 @@ public class StateMachineTaille {
     public void afficherBouquetsPetits () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getTaille() == "Petit") {
-                article.setVisible(true);
+                article.setVisibleTaille(true);
             }
             else 
             {
-                article.setVisible(false);
+                article.setVisibleTaille(false);
             }
         } 
     }
     public void afficherBouquetsMoyens () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getTaille() == "Moyen") {
-                article.setVisible(true);
+                article.setVisibleTaille(true);
             }
             else 
             {
-                article.setVisible(false);
+                article.setVisibleTaille(false);
             }
         } 
     }
     public void afficherBouquetsGrands () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getTaille() == "Grand") {
-                article.setVisible(true);
+                article.setVisibleTaille(true);
             }
             else 
             {
-                article.setVisible(false);
+                article.setVisibleTaille(false);
             }
         } 
     }

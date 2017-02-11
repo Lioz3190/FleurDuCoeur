@@ -40,7 +40,7 @@ public class PageFleurs extends javax.swing.JPanel {
         listeArticles = new ArrayList<>();
         
         listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rose", "./images/fleur.jpg",4, "Moyen")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 36, "Rose", "Rose", "./images/fleur.jpg",4, "Moyen")));
         listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Grand")));
         listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
         listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
@@ -64,7 +64,8 @@ public class PageFleurs extends javax.swing.JPanel {
     private void refresh () {
         fleurs.removeAll();
         for (ArticlePanel article : listeArticles) {
-            if (article.isVisible())
+            System.out.println(article.isVisibleColor() + " " + article.isVisibleTaille() + "    " + article.isVisiblePrix());
+            if (article.isVisibleColor() && article.isVisibleTaille() && article.isVisiblePrix())
                 fleurs.add(article);
         }
         this.repaint();
@@ -283,10 +284,12 @@ public class PageFleurs extends javax.swing.JPanel {
 
     private void whiteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_whiteBtnMouseClicked
         stateMachineCouleur.onMouseClickBlanche();
+        this.refresh();
     }//GEN-LAST:event_whiteBtnMouseClicked
 
     private void purpleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_purpleBtnMouseClicked
         stateMachineCouleur.onMouseClickViolet();
+        this.refresh();
     }//GEN-LAST:event_purpleBtnMouseClicked
 
     private void pinkBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pinkBtnMouseClicked
@@ -296,38 +299,47 @@ public class PageFleurs extends javax.swing.JPanel {
 
     private void yellowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yellowBtnMouseClicked
         stateMachineCouleur.onMouseClickJaune();
+        this.refresh();
     }//GEN-LAST:event_yellowBtnMouseClicked
 
     private void redBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redBtnMouseClicked
         stateMachineCouleur.onMouseClickRouge();
+        this.refresh();
     }//GEN-LAST:event_redBtnMouseClicked
 
     private void lowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lowBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachinePrix.onMouseClickMoins30();
+        this.refresh();
     }//GEN-LAST:event_lowBtnMouseClicked
 
     private void middleLowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleLowBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachinePrix.afficherBouquets30_40();
+        this.refresh();
     }//GEN-LAST:event_middleLowBtnMouseClicked
 
     private void middleHighBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleHighBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachinePrix.afficherBouquets40_50();
+        this.refresh();
     }//GEN-LAST:event_middleHighBtnMouseClicked
 
     private void highBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_highBtnMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_highBtnMouseClicked
+        stateMachinePrix.afficherBouquetsPlus50();
+        this.refresh();
+}//GEN-LAST:event_highBtnMouseClicked
 
     private void littleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_littleBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachineTaille.afficherBouquetsPetits();
+        this.refresh();
     }//GEN-LAST:event_littleBtnMouseClicked
 
     private void middleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachineTaille.afficherBouquetsMoyens();
+        this.refresh();
     }//GEN-LAST:event_middleBtnMouseClicked
 
     private void bigBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bigBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachineTaille.afficherBouquetsGrands();
+        this.refresh();
     }//GEN-LAST:event_bigBtnMouseClicked
 
 

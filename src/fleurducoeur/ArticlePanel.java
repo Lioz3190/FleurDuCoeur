@@ -20,15 +20,7 @@ public class ArticlePanel extends javax.swing.JPanel {
     /**
      * Creates new form ArticlePanel
      */
-    private boolean visible;
-
-    public boolean isVisible() {
-        return visible;
-    }
-
-    public void setVisible(boolean visible) {
-        this.visible = visible;
-    }
+    
     
     public ArticlePanel(Fleur art) {
         initComponents();
@@ -36,9 +28,39 @@ public class ArticlePanel extends javax.swing.JPanel {
         picture.setIcon(new ImageIcon(article.getAdresseImage()));
         //picture = new JPanel(new ImageIcon(article.getAdresseImage()).getImage());
         price.setText(toString(article.getPrix()));
-        visible = true;
+        visibleColor = true;
+        visibleTaille = true;
+        visiblePrix = true;
     }
     
+    private boolean visibleColor;
+
+    public boolean isVisibleColor() {
+        return visibleColor;
+    }
+
+    public void setVisibleColor(boolean visible) {
+        this.visibleColor = visible;
+    }
+    
+    private boolean visibleTaille;
+    private boolean visiblePrix;
+
+    public boolean isVisibleTaille() {
+        return visibleTaille;
+    }
+
+    public void setVisibleTaille(boolean visibleTaille) {
+        this.visibleTaille = visibleTaille;
+    }
+
+    public boolean isVisiblePrix() {
+        return visiblePrix;
+    }
+
+    public void setVisiblePrix(boolean visiblePrix) {
+        this.visiblePrix = visiblePrix;
+    }
     public String toString(double prix){
         return ("Prix : "+ prix+ " €");
     }

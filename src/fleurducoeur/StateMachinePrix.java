@@ -124,11 +124,11 @@ public class StateMachinePrix {
     public void afficherBouquetsMoins30 () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getPrix() <= 30) {
-                article.setVisible(true);
+                article.setVisiblePrix(true);
             }
             else 
             {
-                article.setVisible(false);
+                article.setVisiblePrix(false);
             }
         }        
     }
@@ -136,11 +136,11 @@ public class StateMachinePrix {
     public void afficherBouquets30_40 () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getPrix() > 30 && article.getArticle().getPrix() <= 40) {
-                article.setVisible(true);
+                article.setVisiblePrix(true);
             }
             else 
             {
-                article.setVisible(false);
+                article.setVisiblePrix(false);
             }
         } 
     }
@@ -148,11 +148,11 @@ public class StateMachinePrix {
     public void afficherBouquets40_50 () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getPrix() > 40 && article.getArticle().getPrix() <= 50) {
-                article.setVisible(true);
+                article.setVisiblePrix(true);
             }
             else 
             {
-                article.setVisible(false);
+                article.setVisiblePrix(false);
             }
         } 
     }
@@ -160,11 +160,11 @@ public class StateMachinePrix {
     public void afficherBouquetsPlus50 () {
         for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getPrix() > 50) {
-                article.setVisible(true);
+                article.setVisiblePrix(true);
             }
             else 
             {
-                article.setVisible(false);
+                article.setVisiblePrix(false);
             }
         } 
     }
