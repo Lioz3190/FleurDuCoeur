@@ -9,7 +9,6 @@ import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import javafx.scene.image.ImageView;
 
 /**
  *
