@@ -44,12 +44,11 @@ public class ArticlePanel extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(2147483647, 300));
         setLayout(new java.awt.BorderLayout());
 
-        picture.setMinimumSize(new java.awt.Dimension(300, 300));
         picture.setPreferredSize(new java.awt.Dimension(300, 300));
         add(picture, java.awt.BorderLayout.PAGE_START);
 
         price.setText("jLabel1");
-        add(price, java.awt.BorderLayout.CENTER);
+        add(price, java.awt.BorderLayout.PAGE_END);
     }// </editor-fold>//GEN-END:initComponents
 
 

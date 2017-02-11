@@ -38,7 +38,7 @@ public class Accueil extends javax.swing.JFrame {
         buttunAccueil = new javax.swing.JButton();
         tabs = new javax.swing.JTabbedPane();
         pageAccueil1 = new fleurducoeur.PageAccueil();
-        pageFleurs1 = new fleurducoeur.PageFleurs();
+        pageFleurs2 = new fleurducoeur.PageFleurs();
         bouquets1 = new fleurducoeur.PageBouquets();
         occasions1 = new fleurducoeur.PageOccasions();
         patience1 = new fleurducoeur.PagePatience();
@@ -83,7 +83,7 @@ public class Accueil extends javax.swing.JFrame {
 
         tabs.setForeground(new java.awt.Color(102, 102, 102));
         tabs.addTab("Accueil", pageAccueil1);
-        tabs.addTab("tab7", pageFleurs1);
+        tabs.addTab("tab7", pageFleurs2);
 
         javax.swing.GroupLayout bouquets1Layout = new javax.swing.GroupLayout(bouquets1);
         bouquets1.setLayout(bouquets1Layout);
@@ -202,7 +202,7 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JPanel enTetePanel;
     private fleurducoeur.PageOccasions occasions1;
     private fleurducoeur.PageAccueil pageAccueil1;
-    private fleurducoeur.PageFleurs pageFleurs1;
+    private fleurducoeur.PageFleurs pageFleurs2;
     private fleurducoeur.PagePanier pagePanier2;
     private fleurducoeur.PagePatience patience1;
     private fleurducoeur.PageRecupererSesFleurs recupererSesFleurs1;

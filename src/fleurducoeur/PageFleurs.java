@@ -13,16 +13,19 @@ import java.awt.GridLayout;
  * @author Lioz-MBPR
  */
 public class PageFleurs extends javax.swing.JPanel {
-    
-    private AffichageFleur sectionFleur = new AffichageFleur();
 
+
+   
     /**
      * Creates new form PageFleurs
      */
     public PageFleurs() {
         initComponents();
-        splitArticle.setRightComponent(sectionFleur);
-        sectionFleur.addArticle(new Article("./images/logo.png", 2.50));
+        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
     }
     
 
@@ -35,22 +38,41 @@ public class PageFleurs extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        splitArticle = new javax.swing.JSplitPane();
+        filter = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        fleurs = new javax.swing.JPanel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitArticle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
+        setLayout(new java.awt.BorderLayout());
+
+        jLabel1.setText("jLabel1");
+
+        javax.swing.GroupLayout filterLayout = new javax.swing.GroupLayout(filter);
+        filter.setLayout(filterLayout);
+        filterLayout.setHorizontalGroup(
+            filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(filterLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitArticle, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
+        filterLayout.setVerticalGroup(
+            filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(filterLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel1)
+                .addContainerGap(264, Short.MAX_VALUE))
         );
+
+        add(filter, java.awt.BorderLayout.LINE_START);
+
+        fleurs.setLayout(new java.awt.GridLayout(3, 3));
+        add(fleurs, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JSplitPane splitArticle;
+    private javax.swing.JPanel filter;
+    private javax.swing.JPanel fleurs;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
