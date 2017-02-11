@@ -9,6 +9,9 @@ import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import javax.swing.JTabbedPane;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 /**
  *
@@ -21,6 +24,20 @@ public class Accueil extends javax.swing.JFrame {
      */
     public Accueil() {
         initComponents();
+        
+        ChangeListener changeListener = new ChangeListener() {
+          public void stateChanged(ChangeEvent changeEvent) {
+            JTabbedPane sourceTabbedPane = (JTabbedPane) changeEvent.getSource();
+            int index = sourceTabbedPane.getSelectedIndex();
+            if (sourceTabbedPane.getTitleAt(index) == "tab7"){
+                Container container1 = pageFleurs2;
+                container1.removeAll();
+                container1.add(new PageFleurs());
+            }
+            //System.out.println("Tab changed to: " + sourceTabbedPane.getTitleAt(index));
+          }
+        };
+        tabs.addChangeListener(changeListener);
     }
     
 

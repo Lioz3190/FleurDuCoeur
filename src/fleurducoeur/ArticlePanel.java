@@ -5,6 +5,7 @@
  */
 package fleurducoeur;
 
+import java.awt.Container;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
@@ -14,12 +15,12 @@ import javax.swing.JPanel;
  */
 public class ArticlePanel extends javax.swing.JPanel {
     
-    private Article article;
+    private Fleur article;
 
     /**
      * Creates new form ArticlePanel
      */
-    public ArticlePanel(Article art) {
+    public ArticlePanel(Fleur art) {
         initComponents();
         this.article = art;
         picture.setIcon(new ImageIcon(article.getAdresseImage()));
@@ -46,6 +47,17 @@ public class ArticlePanel extends javax.swing.JPanel {
         setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         setAutoscrolls(true);
         setMaximumSize(new java.awt.Dimension(2147483647, 300));
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                formMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                formMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                formMouseEntered(evt);
+            }
+        });
 
         price.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         price.setText("jLabel1");
@@ -71,6 +83,20 @@ public class ArticlePanel extends javax.swing.JPanel {
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
+        Container container1 = this.getParent().getParent();
+        container1.removeAll();
+        container1.add(new InfoBouquet(article));
+    }//GEN-LAST:event_formMouseClicked
+
+    private void formMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseEntered
+        this.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+    }//GEN-LAST:event_formMouseEntered
+
+    private void formMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseExited
+        this.setBorder(null);
+    }//GEN-LAST:event_formMouseExited
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
