@@ -21,13 +21,12 @@ public class PageFleurs extends javax.swing.JPanel {
      */
     public PageFleurs() {
         initComponents();
-        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
+        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
         
     }
     
