@@ -21,11 +21,14 @@ public class PageFleurs extends javax.swing.JPanel {
      */
     public PageFleurs() {
         initComponents();
-        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
-        fleurs.add(new ArticlePanel(new Article("./images/logo.png", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
+        fleurs.add(new ArticlePanel(new Article("./images/fleur.jpg", 2.50)));
+        
     }
     
 
@@ -38,29 +41,158 @@ public class PageFleurs extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        colorGroup = new javax.swing.ButtonGroup();
+        priceGroup = new javax.swing.ButtonGroup();
+        varietyGroup = new javax.swing.ButtonGroup();
         filter = new javax.swing.JPanel();
+        whiteBtn = new javax.swing.JRadioButton();
+        redBtn = new javax.swing.JRadioButton();
+        pinkBtn = new javax.swing.JRadioButton();
+        yellowBtn = new javax.swing.JRadioButton();
+        purpleBtn = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        lowBtn = new javax.swing.JRadioButton();
+        middleLowBtn = new javax.swing.JRadioButton();
+        middleHighBtn = new javax.swing.JRadioButton();
+        highBtn = new javax.swing.JRadioButton();
+        jLabel3 = new javax.swing.JLabel();
+        roseBtn = new javax.swing.JRadioButton();
+        lavandeBtn = new javax.swing.JRadioButton();
+        amaryllisBtn = new javax.swing.JRadioButton();
+        muguetBtn = new javax.swing.JRadioButton();
+        magueriteBtn = new javax.swing.JRadioButton();
         fleurs = new javax.swing.JPanel();
 
         setLayout(new java.awt.BorderLayout());
 
-        jLabel1.setText("jLabel1");
+        filter.setBackground(new java.awt.Color(254, 254, 254));
+        filter.setPreferredSize(new java.awt.Dimension(175, 382));
+
+        colorGroup.add(whiteBtn);
+        whiteBtn.setText("Blanc");
+
+        colorGroup.add(redBtn);
+        redBtn.setText("Rouge");
+
+        colorGroup.add(pinkBtn);
+        pinkBtn.setText("Rose");
+
+        colorGroup.add(yellowBtn);
+        yellowBtn.setText("Jaune");
+
+        colorGroup.add(purpleBtn);
+        purpleBtn.setText("Violet");
+
+        jLabel1.setText("Couleur");
+
+        jLabel2.setText("Prix");
+
+        priceGroup.add(lowBtn);
+        lowBtn.setText("<30€");
+
+        priceGroup.add(middleLowBtn);
+        middleLowBtn.setText("30-40€");
+
+        priceGroup.add(middleHighBtn);
+        middleHighBtn.setText("40-50€");
+
+        priceGroup.add(highBtn);
+        highBtn.setText(">50€");
+
+        jLabel3.setText("Variété");
+
+        varietyGroup.add(roseBtn);
+        roseBtn.setText("Rose");
+
+        varietyGroup.add(lavandeBtn);
+        lavandeBtn.setText("Lavande");
+
+        varietyGroup.add(amaryllisBtn);
+        amaryllisBtn.setText("Amaryllis");
+
+        varietyGroup.add(muguetBtn);
+        muguetBtn.setText("Muguet");
+
+        varietyGroup.add(magueriteBtn);
+        magueriteBtn.setText("Maguerite");
 
         javax.swing.GroupLayout filterLayout = new javax.swing.GroupLayout(filter);
         filter.setLayout(filterLayout);
         filterLayout.setHorizontalGroup(
             filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(filterLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(filterLayout.createSequentialGroup()
+                        .addComponent(lowBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(middleLowBtn))
+                    .addComponent(jLabel1)
+                    .addGroup(filterLayout.createSequentialGroup()
+                        .addComponent(whiteBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(purpleBtn))
+                    .addComponent(redBtn)
+                    .addComponent(jLabel2)
+                    .addGroup(filterLayout.createSequentialGroup()
+                        .addComponent(pinkBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(yellowBtn))
+                    .addComponent(jLabel3)
+                    .addGroup(filterLayout.createSequentialGroup()
+                        .addComponent(roseBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(amaryllisBtn))
+                    .addGroup(filterLayout.createSequentialGroup()
+                        .addComponent(middleHighBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(highBtn))
+                    .addGroup(filterLayout.createSequentialGroup()
+                        .addComponent(muguetBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lavandeBtn))
+                    .addComponent(magueriteBtn))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         filterLayout.setVerticalGroup(
             filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(filterLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(10, 10, 10)
                 .addComponent(jLabel1)
-                .addContainerGap(264, Short.MAX_VALUE))
+                .addGap(12, 12, 12)
+                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(whiteBtn)
+                    .addComponent(purpleBtn))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pinkBtn)
+                    .addComponent(yellowBtn))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(redBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lowBtn)
+                    .addComponent(middleLowBtn))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(middleHighBtn)
+                    .addComponent(highBtn))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(roseBtn)
+                    .addComponent(amaryllisBtn))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(muguetBtn)
+                    .addComponent(lavandeBtn))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(magueriteBtn)
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         add(filter, java.awt.BorderLayout.LINE_START);
@@ -71,8 +203,27 @@ public class PageFleurs extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton amaryllisBtn;
+    private javax.swing.ButtonGroup colorGroup;
     private javax.swing.JPanel filter;
     private javax.swing.JPanel fleurs;
+    private javax.swing.JRadioButton highBtn;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JRadioButton lavandeBtn;
+    private javax.swing.JRadioButton lowBtn;
+    private javax.swing.JRadioButton magueriteBtn;
+    private javax.swing.JRadioButton middleHighBtn;
+    private javax.swing.JRadioButton middleLowBtn;
+    private javax.swing.JRadioButton muguetBtn;
+    private javax.swing.JRadioButton pinkBtn;
+    private javax.swing.ButtonGroup priceGroup;
+    private javax.swing.JRadioButton purpleBtn;
+    private javax.swing.JRadioButton redBtn;
+    private javax.swing.JRadioButton roseBtn;
+    private javax.swing.ButtonGroup varietyGroup;
+    private javax.swing.JRadioButton whiteBtn;
+    private javax.swing.JRadioButton yellowBtn;
     // End of variables declaration//GEN-END:variables
 }

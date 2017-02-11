@@ -22,7 +22,7 @@ public class ArticlePanier extends javax.swing.JPanel {
     }
     
     public void setImageArticle (String adresseImage){
-        image = new ImagePanel(adresseImage);
+        ;
     }
 
     /**
@@ -39,7 +39,7 @@ public class ArticlePanier extends javax.swing.JPanel {
         inputValeur = new javax.swing.JTextField();
         jButtonPlus = new javax.swing.JButton();
         jButtonMoins = new javax.swing.JButton();
-        image = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
@@ -96,37 +96,29 @@ public class ArticlePanier extends javax.swing.JPanel {
                     .addComponent(inputValeur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonMoins)
                     .addComponent(jButtonPlus))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout imageLayout = new javax.swing.GroupLayout(image);
-        image.setLayout(imageLayout);
-        imageLayout.setHorizontalGroup(
-            imageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 175, Short.MAX_VALUE)
-        );
-        imageLayout.setVerticalGroup(
-            imageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 176, Short.MAX_VALUE)
-        );
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fleurducoeur/logo.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(image, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(33, 33, 33)
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(image, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(104, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -150,11 +142,11 @@ public class ArticlePanier extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel image;
     private javax.swing.JTextField inputValeur;
     private javax.swing.JButton jButtonMoins;
     private javax.swing.JButton jButtonPlus;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

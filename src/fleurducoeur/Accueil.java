@@ -69,8 +69,8 @@ public class Accueil extends javax.swing.JFrame {
         enTetePanelLayout.setHorizontalGroup(
             enTetePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(enTetePanelLayout.createSequentialGroup()
-                .addComponent(buttunAccueil, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1738, Short.MAX_VALUE))
+                .addComponent(buttunAccueil, javax.swing.GroupLayout.DEFAULT_SIZE, 793, Short.MAX_VALUE)
+                .addContainerGap())
         );
         enTetePanelLayout.setVerticalGroup(
             enTetePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -82,6 +82,8 @@ public class Accueil extends javax.swing.JFrame {
         container.add(enTetePanel, java.awt.BorderLayout.PAGE_START);
 
         tabs.setForeground(new java.awt.Color(102, 102, 102));
+
+        pageAccueil1.setPreferredSize(new java.awt.Dimension(500, 386));
         tabs.addTab("Accueil", pageAccueil1);
         tabs.addTab("tab7", pageFleurs2);
 
@@ -89,11 +91,11 @@ public class Accueil extends javax.swing.JFrame {
         bouquets1.setLayout(bouquets1Layout);
         bouquets1Layout.setHorizontalGroup(
             bouquets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1908, Short.MAX_VALUE)
+            .addGap(0, 785, Short.MAX_VALUE)
         );
         bouquets1Layout.setVerticalGroup(
             bouquets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 985, Short.MAX_VALUE)
+            .addGap(0, 465, Short.MAX_VALUE)
         );
 
         tabs.addTab("Catégorie de bouquets", bouquets1);
@@ -102,11 +104,11 @@ public class Accueil extends javax.swing.JFrame {
         occasions1.setLayout(occasions1Layout);
         occasions1Layout.setHorizontalGroup(
             occasions1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1908, Short.MAX_VALUE)
+            .addGap(0, 785, Short.MAX_VALUE)
         );
         occasions1Layout.setVerticalGroup(
             occasions1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 985, Short.MAX_VALUE)
+            .addGap(0, 465, Short.MAX_VALUE)
         );
 
         tabs.addTab("Occasions", occasions1);
@@ -116,11 +118,11 @@ public class Accueil extends javax.swing.JFrame {
         recupererSesFleurs1.setLayout(recupererSesFleurs1Layout);
         recupererSesFleurs1Layout.setHorizontalGroup(
             recupererSesFleurs1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1908, Short.MAX_VALUE)
+            .addGap(0, 785, Short.MAX_VALUE)
         );
         recupererSesFleurs1Layout.setVerticalGroup(
             recupererSesFleurs1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 985, Short.MAX_VALUE)
+            .addGap(0, 465, Short.MAX_VALUE)
         );
 
         tabs.addTab("Où récupérer ses fleurs ?", recupererSesFleurs1);
@@ -135,13 +137,12 @@ public class Accueil extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(container, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(container, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(container, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(container, javax.swing.GroupLayout.DEFAULT_SIZE, 566, Short.MAX_VALUE)
                 .addContainerGap())
         );
 

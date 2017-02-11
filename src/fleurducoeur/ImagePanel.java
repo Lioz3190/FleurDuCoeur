@@ -5,11 +5,12 @@
  */
 package fleurducoeur;
 
-import java.awt.Graphics;
-import java.awt.Image;
+import java.awt.Graphics;import java.awt.image.BufferedImage;
+;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -19,33 +20,19 @@ public class ImagePanel extends javax.swing.JPanel {
     
     private static final long serialVersionUID = 1L;
     private String imageAdress;
-    private Image image = null;
+    private BufferedImage image = null;
     /**
      * Creates new form ImagePanel
      */
     public ImagePanel(String imageAdress) {
         initComponents();
-        setImage(imageAdress);
     }
     
-    public void setImage(String imageAdress){
-        try {
-            File pathToFile = new File(imageAdress);
-            Image image2 = ImageIO.read(pathToFile);
-            this.image = image2;
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        
-    }
     
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
-        if (image != null)
-        {
-            g.drawImage(image,0,0,this);
-        }
+            g.drawImage(image,0,0,null);
     }
 
     /**
