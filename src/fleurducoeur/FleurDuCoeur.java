@@ -5,6 +5,8 @@
  */
 package fleurducoeur;
 
+import javax.swing.UIManager;
+
 /**
  *
  * @author Lioz-MBPR
@@ -16,6 +18,12 @@ public class FleurDuCoeur {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        try 
+        { 
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"); 
+        } 
+        catch(Exception e){ 
+        }
         new Accueil().setVisible(true);
     }
     

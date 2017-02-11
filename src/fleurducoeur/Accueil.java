@@ -42,6 +42,8 @@ public class Accueil extends javax.swing.JFrame {
         pageFleurs1 = new fleurducoeur.PageFleurs();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("FleurDuCoeur");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         container.setLayout(new java.awt.BorderLayout());
