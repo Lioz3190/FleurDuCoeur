@@ -39,16 +39,15 @@ public class Accueil extends javax.swing.JFrame {
         tabs = new javax.swing.JTabbedPane();
         pageAccueil1 = new fleurducoeur.PageAccueil();
         pageFleurs1 = new fleurducoeur.PageFleurs();
-        bouquets1 = new fleurducoeur.Bouquets();
-        occasions1 = new fleurducoeur.Occasions();
-        patience1 = new fleurducoeur.Patience();
-        recupererSesFleurs1 = new fleurducoeur.RecupererSesFleurs();
-        panier1 = new fleurducoeur.Panier();
+        bouquets1 = new fleurducoeur.PageBouquets();
+        occasions1 = new fleurducoeur.PageOccasions();
+        patience1 = new fleurducoeur.PagePatience();
+        recupererSesFleurs1 = new fleurducoeur.PageRecupererSesFleurs();
+        pagePanier2 = new fleurducoeur.PagePanier();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FleurDuCoeur");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         container.setLayout(new java.awt.BorderLayout());
 
@@ -137,19 +136,7 @@ public class Accueil extends javax.swing.JFrame {
         );
 
         tabs.addTab("Où récupérer ses fleurs ?", recupererSesFleurs1);
-
-        javax.swing.GroupLayout panier1Layout = new javax.swing.GroupLayout(panier1);
-        panier1.setLayout(panier1Layout);
-        panier1Layout.setHorizontalGroup(
-            panier1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1908, Short.MAX_VALUE)
-        );
-        panier1Layout.setVerticalGroup(
-            panier1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 985, Short.MAX_VALUE)
-        );
-
-        tabs.addTab("Panier", panier1);
+        tabs.addTab("Panier", pagePanier2);
 
         container.add(tabs, java.awt.BorderLayout.CENTER);
         tabs.getAccessibleContext().setAccessibleName("Accueil");
@@ -221,18 +208,16 @@ public class Accueil extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private fleurducoeur.Bouquets bouquets1;
-    private javax.swing.JButton boutonAccueil;
+    private fleurducoeur.PageBouquets bouquets1;
     private javax.swing.JButton buttunAccueil;
     private javax.swing.JPanel container;
     private javax.swing.JPanel enTetePanel;
-    private java.awt.Panel enTetePanel1;
-    private fleurducoeur.Occasions occasions1;
+    private fleurducoeur.PageOccasions occasions1;
     private fleurducoeur.PageAccueil pageAccueil1;
     private fleurducoeur.PageFleurs pageFleurs1;
-    private fleurducoeur.Panier panier1;
-    private fleurducoeur.Patience patience1;
-    private fleurducoeur.RecupererSesFleurs recupererSesFleurs1;
+    private fleurducoeur.PagePanier pagePanier2;
+    private fleurducoeur.PagePatience patience1;
+    private fleurducoeur.PageRecupererSesFleurs recupererSesFleurs1;
     private javax.swing.JTabbedPane tabs;
     // End of variables declaration//GEN-END:variables
 }

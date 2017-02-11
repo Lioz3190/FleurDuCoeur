@@ -9,12 +9,12 @@ package fleurducoeur;
  *
  * @author Lioz-MBPR
  */
-public class RecupererSesFleurs extends javax.swing.JPanel {
+public class PageContact extends javax.swing.JPanel {
 
     /**
-     * Creates new form RecupererSesFleurs
+     * Creates new form Contact
      */
-    public RecupererSesFleurs() {
+    public PageContact() {
         initComponents();
     }
 
@@ -29,23 +29,23 @@ public class RecupererSesFleurs extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("Carte de géolocalisation");
+        jLabel1.setText("Contact");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(97, 97, 97)
+                .addGap(42, 42, 42)
                 .addComponent(jLabel1)
-                .addContainerGap(165, Short.MAX_VALUE))
+                .addContainerGap(315, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(79, 79, 79)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel1)
-                .addContainerGap(206, Short.MAX_VALUE))
+                .addContainerGap(255, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

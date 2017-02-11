@@ -9,12 +9,12 @@ package fleurducoeur;
  *
  * @author Lioz-MBPR
  */
-public class Contact extends javax.swing.JPanel {
+public class PagePatience extends javax.swing.JPanel {
 
     /**
-     * Creates new form Contact
+     * Creates new form Patience
      */
-    public Contact() {
+    public PagePatience() {
         initComponents();
     }
 
@@ -29,23 +29,23 @@ public class Contact extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("Contact");
+        jLabel1.setText("Graines et bourgeons");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(135, 135, 135)
                 .addComponent(jLabel1)
-                .addContainerGap(315, Short.MAX_VALUE))
+                .addContainerGap(141, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(119, 119, 119)
                 .addComponent(jLabel1)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addContainerGap(166, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

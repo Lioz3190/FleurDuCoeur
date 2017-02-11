@@ -9,12 +9,12 @@ package fleurducoeur;
  *
  * @author Lioz-MBPR
  */
-public class Bouquets extends javax.swing.JPanel {
+public class PageOccasions extends javax.swing.JPanel {
 
     /**
-     * Creates new form Bouquets
+     * Creates new form Occasions
      */
-    public Bouquets() {
+    public PageOccasions() {
         initComponents();
     }
 
@@ -29,23 +29,23 @@ public class Bouquets extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("Bouquets");
+        jLabel1.setText("Occasions");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
+                .addGap(45, 45, 45)
                 .addComponent(jLabel1)
-                .addContainerGap(294, Short.MAX_VALUE))
+                .addContainerGap(298, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(64, 64, 64)
+                .addGap(37, 37, 37)
                 .addComponent(jLabel1)
-                .addContainerGap(221, Short.MAX_VALUE))
+                .addContainerGap(248, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

@@ -9,12 +9,12 @@ package fleurducoeur;
  *
  * @author Lioz-MBPR
  */
-public class Patience extends javax.swing.JPanel {
+public class PageBouquets extends javax.swing.JPanel {
 
     /**
-     * Creates new form Patience
+     * Creates new form Bouquets
      */
-    public Patience() {
+    public PageBouquets() {
         initComponents();
     }
 
@@ -29,23 +29,23 @@ public class Patience extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("Graines et bourgeons");
+        jLabel1.setText("Bouquets");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(135, 135, 135)
+                .addGap(53, 53, 53)
                 .addComponent(jLabel1)
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addContainerGap(294, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(119, 119, 119)
+                .addGap(64, 64, 64)
                 .addComponent(jLabel1)
-                .addContainerGap(166, Short.MAX_VALUE))
+                .addContainerGap(221, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
