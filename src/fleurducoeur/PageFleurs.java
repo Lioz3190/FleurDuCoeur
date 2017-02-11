@@ -13,15 +13,18 @@ import java.awt.GridLayout;
  * @author Lioz-MBPR
  */
 public class PageFleurs extends javax.swing.JPanel {
+    
+    private AffichageFleur sectionFleur = new AffichageFleur();
 
     /**
      * Creates new form PageFleurs
      */
     public PageFleurs() {
         initComponents();
-         this.setLayout(new GridLayout(3,3));
-        
+        splitArticle.setRightComponent(sectionFleur);
+        sectionFleur.addArticle(new Article("./images/logo.png", 2.50));
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -32,22 +35,22 @@ public class PageFleurs extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSplitPane1 = new javax.swing.JSplitPane();
+        splitArticle = new javax.swing.JSplitPane();
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
+            .addComponent(splitArticle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
+            .addComponent(splitArticle, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JSplitPane splitArticle;
     // End of variables declaration//GEN-END:variables
 }

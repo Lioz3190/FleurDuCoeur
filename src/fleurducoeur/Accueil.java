@@ -55,7 +55,7 @@ public class Accueil extends javax.swing.JFrame {
         enTetePanel.setPreferredSize(new java.awt.Dimension(388, 60));
 
         buttunAccueil.setBackground(new java.awt.Color(255, 255, 255));
-        buttunAccueil.setIcon(new javax.swing.ImageIcon("/Users/daviddang/Documents/ENAC/Automata/FleurDuCoeur/images/logo.png")); // NOI18N
+        buttunAccueil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fleurducoeur/logo.png"))); // NOI18N
         buttunAccueil.setText("FleurDuCoeur");
         buttunAccueil.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         buttunAccueil.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -83,19 +83,7 @@ public class Accueil extends javax.swing.JFrame {
 
         tabs.setForeground(new java.awt.Color(102, 102, 102));
         tabs.addTab("Accueil", pageAccueil1);
-
-        javax.swing.GroupLayout pageFleurs1Layout = new javax.swing.GroupLayout(pageFleurs1);
-        pageFleurs1.setLayout(pageFleurs1Layout);
-        pageFleurs1Layout.setHorizontalGroup(
-            pageFleurs1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1908, Short.MAX_VALUE)
-        );
-        pageFleurs1Layout.setVerticalGroup(
-            pageFleurs1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 985, Short.MAX_VALUE)
-        );
-
-        tabs.addTab("Fleurs", pageFleurs1);
+        tabs.addTab("tab7", pageFleurs1);
 
         javax.swing.GroupLayout bouquets1Layout = new javax.swing.GroupLayout(bouquets1);
         bouquets1.setLayout(bouquets1Layout);

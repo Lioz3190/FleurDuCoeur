@@ -20,9 +20,6 @@ public class ImagePanel extends javax.swing.JPanel {
     private static final long serialVersionUID = 1L;
     private String imageAdress;
     private Image image = null;
-    private int iWidth2;
-    private int iHeight2;
-
     /**
      * Creates new form ImagePanel
      */
@@ -36,8 +33,6 @@ public class ImagePanel extends javax.swing.JPanel {
             File pathToFile = new File(imageAdress);
             Image image2 = ImageIO.read(pathToFile);
             this.image = image2;
-            this.iWidth2 = image.getWidth(this)/2;
-            this.iHeight2 = image.getHeight(this)/2;
         } catch (IOException ex) {
             ex.printStackTrace();
         }
@@ -49,9 +44,7 @@ public class ImagePanel extends javax.swing.JPanel {
         super.paintComponent(g);
         if (image != null)
         {
-            int x = this.getParent().getWidth()/2 - iWidth2;
-            int y = this.getParent().getHeight()/2 - iHeight2;
-            g.drawImage(image,x,y,this);
+            g.drawImage(image,0,0,this);
         }
     }
 

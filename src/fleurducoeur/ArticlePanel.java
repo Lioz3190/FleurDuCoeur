@@ -16,13 +16,14 @@ public class ArticlePanel extends javax.swing.JPanel {
     /**
      * Creates new form ArticlePanel
      */
-    public ArticlePanel(Article article) {
+    public ArticlePanel(Article art) {
         initComponents();
-        this.article = article;
-        price.setText(article.getPrix() + "");
+        this.article = art;
+        picture = new ImagePanel(article.getAdresseImage());
+        price.setText(toString(article.getPrix()));
     }
     
-    public String toString(float prix){
+    public String toString(double prix){
         return ("Prix : "+ prix+ " €");
     }
 
@@ -35,49 +36,25 @@ public class ArticlePanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        picture = new javax.swing.JPanel();
         price = new javax.swing.JLabel();
-        picture = new fleurducoeur.ImagePanel(article.getAdresseImage());
 
-        price.setText("Prix : 1,00€");
+        setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        setAutoscrolls(true);
+        setMaximumSize(new java.awt.Dimension(2147483647, 300));
+        setLayout(new java.awt.BorderLayout());
 
-        javax.swing.GroupLayout pictureLayout = new javax.swing.GroupLayout(picture);
-        picture.setLayout(pictureLayout);
-        pictureLayout.setHorizontalGroup(
-            pictureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        pictureLayout.setVerticalGroup(
-            pictureLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 114, Short.MAX_VALUE)
-        );
+        picture.setMinimumSize(new java.awt.Dimension(300, 300));
+        picture.setPreferredSize(new java.awt.Dimension(300, 300));
+        add(picture, java.awt.BorderLayout.PAGE_START);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(32, Short.MAX_VALUE)
-                .addComponent(price)
-                .addGap(31, 31, 31))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(picture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(picture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(price)
-                .addContainerGap())
-        );
+        price.setText("jLabel1");
+        add(price, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private fleurducoeur.ImagePanel picture;
+    private javax.swing.JPanel picture;
     private javax.swing.JLabel price;
     // End of variables declaration//GEN-END:variables
 }
