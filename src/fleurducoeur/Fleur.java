@@ -14,6 +14,7 @@ public class Fleur extends Article {
     private String categorie;
     private String couleur;
     private int note;
+    private String taille;
 
     public int getNote() {
         return note;
@@ -23,12 +24,13 @@ public class Fleur extends Article {
         this.note = note;
     }
     
-    public Fleur (String n, double p, String cat, String col, String adr, int not ) {
+    public Fleur (String n, double p, String cat, String col, String adr, int not, String t ) {
         super(adr,p);
         this.name = n;
         this.categorie = cat;
         this.couleur = col;
         this.note = not;
+        this.taille = t;
     }
 
     public String getName() {
@@ -53,6 +55,14 @@ public class Fleur extends Article {
 
     public void setCouleur(String couleur) {
         this.couleur = couleur;
+    }
+
+    public String getTaille() {
+        return taille;
+    }
+
+    public void setTaille(String taille) {
+        this.taille = taille;
     }
     
     

@@ -22,6 +22,14 @@ public class PageFleurs extends javax.swing.JPanel {
     
     private ArrayList<ArticlePanel> listeArticles;
     
+    public ArrayList<ArticlePanel> getListeArticles (){
+        return listeArticles;
+    }
+    public void setListeArticles (ArrayList liste)
+    {
+        listeArticles = liste;
+    }
+    
     /**
      * Creates new form PageFleurs
      */
@@ -31,18 +39,21 @@ public class PageFleurs extends javax.swing.JPanel {
         
         listeArticles = new ArrayList<>();
         
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rose", "./images/fleur.jpg",4)));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rose", "./images/fleur.jpg",4, "Moyen")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Grand")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
         
         
         
-        stateMachineCouleur = new StateMachineCouleur(listeArticles);
-        stateMachinePrix = new StateMachinePrix(listeArticles);
-        stateMachineTaille = new StateMachineTaille(listeArticles);
+        stateMachineCouleur = new StateMachineCouleur(this);
+        stateMachinePrix = new StateMachinePrix(this);
+        stateMachineTaille = new StateMachineTaille(this);
         
         for (ArticlePanel art : listeArticles) {
             fleurs.add(art);
@@ -50,6 +61,14 @@ public class PageFleurs extends javax.swing.JPanel {
         
     }
     
+    private void refresh () {
+        fleurs.removeAll();
+        for (ArticlePanel article : listeArticles) {
+            if (article.isVisible())
+                fleurs.add(article);
+        }
+        this.repaint();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -291,23 +310,24 @@ public class PageFleurs extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void whiteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_whiteBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachineCouleur.onMouseClickBlanche();
     }//GEN-LAST:event_whiteBtnMouseClicked
 
     private void purpleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_purpleBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachineCouleur.onMouseClickViolet();
     }//GEN-LAST:event_purpleBtnMouseClicked
 
     private void pinkBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pinkBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachineCouleur.onMouseClickRose();
+        this.refresh();
     }//GEN-LAST:event_pinkBtnMouseClicked
 
     private void yellowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yellowBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachineCouleur.onMouseClickJaune();
     }//GEN-LAST:event_yellowBtnMouseClicked
 
     private void redBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redBtnMouseClicked
-        // TODO add your handling code here:
+        stateMachineCouleur.onMouseClickRouge();
     }//GEN-LAST:event_redBtnMouseClicked
 
     private void lowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lowBtnMouseClicked

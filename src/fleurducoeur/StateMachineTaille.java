@@ -18,12 +18,12 @@ public class StateMachineTaille {
     
     private StateTaille myState;
     
-    private ArrayList liste;
+    private PageFleurs pageFleurs;
     
-    public StateMachineTaille (ArrayList listeArticles) {
+    public StateMachineTaille (PageFleurs page) {
      
         myState = StateTaille.PETIT;
-        liste = listeArticles;
+        pageFleurs = page;
     }
     
     public void setState(StateTaille state){
@@ -96,12 +96,36 @@ public class StateMachineTaille {
     
     
     public void afficherBouquetsPetits () {
-        
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
+            if (article.getArticle().getTaille() == "Petit") {
+                article.setVisible(true);
+            }
+            else 
+            {
+                article.setVisible(false);
+            }
+        } 
     }
     public void afficherBouquetsMoyens () {
-        
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
+            if (article.getArticle().getTaille() == "Moyen") {
+                article.setVisible(true);
+            }
+            else 
+            {
+                article.setVisible(false);
+            }
+        } 
     }
     public void afficherBouquetsGrands () {
-        
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
+            if (article.getArticle().getTaille() == "Grand") {
+                article.setVisible(true);
+            }
+            else 
+            {
+                article.setVisible(false);
+            }
+        } 
     }
 }

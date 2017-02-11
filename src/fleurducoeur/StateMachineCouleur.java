@@ -14,11 +14,11 @@ import java.util.ArrayList;
 public class StateMachineCouleur {
     private StateCouleur myState;
     
-    private ArrayList<ArticlePanel> liste;
+    private PageFleurs pageFleurs;
     
-    public StateMachineCouleur (ArrayList listeArticles) {
+    public StateMachineCouleur (PageFleurs page) {
         myState = StateCouleur.POPULAIRE;
-        liste = listeArticles;
+        pageFleurs = page;
     }
     
     public void setState (StateCouleur state) {
@@ -26,12 +26,17 @@ public class StateMachineCouleur {
     }
     
     public void onMouseClickRose () {
+        System.out.println("mouse click rose");
         switch (myState) {
             case POPULAIRE :
                 setState(StateCouleur.ROSE);
                 afficherBouquetsRoses();
                 break;
             case ROUGE :
+                setState(StateCouleur.ROSE);
+                afficherBouquetsRoses();
+                break;
+            case JAUNE :
                 setState(StateCouleur.ROSE);
                 afficherBouquetsRoses();
                 break;
@@ -66,6 +71,10 @@ public class StateMachineCouleur {
                 setState(StateCouleur.ROUGE);
                 afficherBouquetsRouges();
                 break;
+            case JAUNE :
+                setState(StateCouleur.ROUGE);
+                afficherBouquetsRouges();
+                break;
             case BLANCHE :
                 setState(StateCouleur.ROUGE);
                 afficherBouquetsRouges();
@@ -95,6 +104,10 @@ public class StateMachineCouleur {
                 setState(StateCouleur.BLANCHE);
                 afficherBouquetsBlanches();
                 break;
+            case JAUNE :
+                setState(StateCouleur.BLANCHE);
+                afficherBouquetsBlanches();
+                break;
             case BLANCHE :
                 //interdit
                 break;
@@ -120,6 +133,10 @@ public class StateMachineCouleur {
                 afficherBouquetsViolets();
                 break;
             case ROSE :
+                setState(StateCouleur.VIOLET);
+                afficherBouquetsViolets();
+                break;
+            case JAUNE :
                 setState(StateCouleur.VIOLET);
                 afficherBouquetsViolets();
                 break;
@@ -152,6 +169,10 @@ public class StateMachineCouleur {
                 setState(StateCouleur.VARIE);
                 afficherBouquetsVaries();
                 break;
+            case JAUNE :
+                setState(StateCouleur.VARIE);
+                afficherBouquetsVaries();
+                break;
             case BLANCHE :
                 setState(StateCouleur.VARIE);
                 afficherBouquetsVaries();
@@ -165,63 +186,110 @@ public class StateMachineCouleur {
                 break;
         }
     }
+    public void onMouseClickJaune () {
+        switch (myState) {
+            case POPULAIRE :
+                setState(StateCouleur.JAUNE);
+                afficherBouquetsJaunes();
+                break;
+            case ROUGE :
+                setState(StateCouleur.JAUNE);
+                afficherBouquetsJaunes();
+                break;
+            case ROSE :
+                setState(StateCouleur.JAUNE);
+                afficherBouquetsJaunes();
+                break;
+            case JAUNE :
+                //interdit
+                break;
+            case BLANCHE :
+                setState(StateCouleur.JAUNE);
+                afficherBouquetsJaunes();
+                break;
+            case VIOLET :
+                setState(StateCouleur.JAUNE);
+                afficherBouquetsJaunes();
+                break;
+            case VARIE :
+                setState(StateCouleur.JAUNE);
+                afficherBouquetsJaunes();
+                break;
+        }
+    }
     
     public void afficherBouquetsRoses () {
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Rose")) {
-                temp.add(article);
+                article.setVisible(true);
+            }
+            else
+            {
+                article.setVisible(false);
             }
         }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
     }
     
     public void afficherBouquetsRouges () {
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Rouge")) {
-                temp.add(article);
+                article.setVisible(true);
             }
-        }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
+            else
+            {
+                article.setVisible(false);
+            }
+        }  
+    }
+    
+    public void afficherBouquetsJaunes () {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
+            if (article.getArticle().getCouleur().equals("Jaune")) {
+                article.setVisible(true);
+            }
+            else
+            {
+                article.setVisible(false);
+            }
+        }  
         
     }
     
     public void afficherBouquetsBlanches () {
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Blanche")) {
-                temp.add(article);
+                article.setVisible(true);
             }
-        }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
+            else
+            {
+                article.setVisible(false);
+            }
+        }  
         
     }
     
     public void afficherBouquetsViolets () {
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Violet")) {
-                temp.add(article);
+                article.setVisible(true);
             }
-        }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
-        
+            else
+            {
+                article.setVisible(false);
+            }
+        }  
     }
     
     public void afficherBouquetsVaries () {
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getCouleur().equals("Varie")) {
-                temp.add(article);
+                article.setVisible(true);
             }
-        }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
+            else
+            {
+                article.setVisible(false);
+            }
+        }  
         
     }
 }

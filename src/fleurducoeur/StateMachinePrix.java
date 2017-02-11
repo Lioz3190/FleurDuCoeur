@@ -14,11 +14,11 @@ import java.util.ArrayList;
 public class StateMachinePrix {
     private StatePrix myState;
    
-    private ArrayList<ArticlePanel> liste;
+    private PageFleurs pageFleurs;
     
-    public StateMachinePrix (ArrayList listeArticles) {
+    public StateMachinePrix (PageFleurs page) {
         myState = StatePrix.POPULAIRE;
-        liste = listeArticles;
+        pageFleurs = page;
     }
     
     public void setState (StatePrix state) {
@@ -121,47 +121,51 @@ public class StateMachinePrix {
         }
     }
     
-    public void afficherBouquetsMoins30 () {    
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+    public void afficherBouquetsMoins30 () {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getPrix() <= 30) {
-                temp.add(article);
+                article.setVisible(true);
+            }
+            else 
+            {
+                article.setVisible(false);
             }
         }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
     }
     
     public void afficherBouquets30_40 () {
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getPrix() > 30 && article.getArticle().getPrix() <= 40) {
-                temp.add(article);
+                article.setVisible(true);
             }
-        }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
+            else 
+            {
+                article.setVisible(false);
+            }
+        } 
     }
     
     public void afficherBouquets40_50 () {
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getPrix() > 40 && article.getArticle().getPrix() <= 50) {
-                temp.add(article);
+                article.setVisible(true);
             }
-        }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
+            else 
+            {
+                article.setVisible(false);
+            }
+        } 
     }
     
     public void afficherBouquetsPlus50 () {
-        ArrayList temp = new ArrayList<>();
-        for (ArticlePanel article : liste) {
+        for (ArticlePanel article : pageFleurs.getListeArticles()) {
             if (article.getArticle().getPrix() > 50) {
-                temp.add(article);
+                article.setVisible(true);
             }
-        }        
-        liste.removeAll(liste);
-        liste.addAll(temp);
+            else 
+            {
+                article.setVisible(false);
+            }
+        } 
     }
 }

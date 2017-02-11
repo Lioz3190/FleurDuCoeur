@@ -20,12 +20,23 @@ public class ArticlePanel extends javax.swing.JPanel {
     /**
      * Creates new form ArticlePanel
      */
+    private boolean visible;
+
+    public boolean isVisible() {
+        return visible;
+    }
+
+    public void setVisible(boolean visible) {
+        this.visible = visible;
+    }
+    
     public ArticlePanel(Fleur art) {
         initComponents();
         this.article = art;
         picture.setIcon(new ImageIcon(article.getAdresseImage()));
         //picture = new JPanel(new ImageIcon(article.getAdresseImage()).getImage());
         price.setText(toString(article.getPrix()));
+        visible = true;
     }
     
     public String toString(double prix){
