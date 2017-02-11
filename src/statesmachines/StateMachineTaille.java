@@ -24,7 +24,7 @@ public class StateMachineTaille {
     
     public StateMachineTaille (PageFleurs page) {
      
-        myState = StateTaille.PETIT;
+        myState = StateTaille.POPULAIRE;
         pageFleurs = page;
     }
     

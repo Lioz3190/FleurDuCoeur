@@ -44,15 +44,15 @@ public class PageFleurs extends javax.swing.JPanel {
         
         listeArticles = new ArrayList<>();
         
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 36, "Rose", "Rose", "./images/fleur.jpg",4, "Moyen")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Grand")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
-        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/Rouge.png",4, "Moyen")));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 36, "Rose", "Rose", "./images/Rose.png",4, "Moyen")));
+        listeArticles.add(new ArticlePanel(new Fleur("Cocu", 55, "Tulipe", "Jaune", "./images/Jaune.png",4, "Grand")));
+        listeArticles.add(new ArticlePanel(new Fleur("Senteur", 21, "Lavandes", "Violet", "./images/Lavandes.png",4, "Moyen")));
+        listeArticles.add(new ArticlePanel(new Fleur("Dur", 45, "Orchidées", "Varie", "./images/Orchidées.png",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("1Mai", 1, "Muguet", "Blanche", "./images/Muguet.png",4, "Petit")));
+        listeArticles.add(new ArticlePanel(new Fleur("Champs", 34.45, "Maguerite", "Blanche", "./images/Marguerites.png",4, "Grand")));
+        //listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
+        //listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4, "Petit")));
         
         
         
@@ -104,6 +104,7 @@ public class PageFleurs extends javax.swing.JPanel {
         littleBtn = new javax.swing.JRadioButton();
         middleBtn = new javax.swing.JRadioButton();
         bigBtn = new javax.swing.JRadioButton();
+        varieBtn = new javax.swing.JRadioButton();
         fleurs = new javax.swing.JPanel();
 
         setLayout(new java.awt.BorderLayout());
@@ -213,6 +214,14 @@ public class PageFleurs extends javax.swing.JPanel {
             }
         });
 
+        colorGroup.add(varieBtn);
+        varieBtn.setText("Varié");
+        varieBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                varieBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout filterLayout = new javax.swing.GroupLayout(filter);
         filter.setLayout(filterLayout);
         filterLayout.setHorizontalGroup(
@@ -229,7 +238,10 @@ public class PageFleurs extends javax.swing.JPanel {
                         .addComponent(whiteBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(purpleBtn))
-                    .addComponent(redBtn)
+                    .addGroup(filterLayout.createSequentialGroup()
+                        .addComponent(redBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(varieBtn))
                     .addComponent(jLabel2)
                     .addGroup(filterLayout.createSequentialGroup()
                         .addComponent(pinkBtn)
@@ -243,7 +255,7 @@ public class PageFleurs extends javax.swing.JPanel {
                         .addComponent(highBtn))
                     .addComponent(bigBtn)
                     .addComponent(middleBtn))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         filterLayout.setVerticalGroup(
             filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -259,7 +271,9 @@ public class PageFleurs extends javax.swing.JPanel {
                     .addComponent(pinkBtn)
                     .addComponent(yellowBtn))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(redBtn)
+                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(redBtn)
+                    .addComponent(varieBtn))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -318,34 +332,39 @@ public class PageFleurs extends javax.swing.JPanel {
     }//GEN-LAST:event_lowBtnMouseClicked
 
     private void middleLowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleLowBtnMouseClicked
-        stateMachinePrix.afficherBouquets30_40();
+        stateMachinePrix.onMouseClick30_40();
         this.refresh();
     }//GEN-LAST:event_middleLowBtnMouseClicked
 
     private void middleHighBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleHighBtnMouseClicked
-        stateMachinePrix.afficherBouquets40_50();
+        stateMachinePrix.onMouseClick40_50();
         this.refresh();
     }//GEN-LAST:event_middleHighBtnMouseClicked
 
     private void highBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_highBtnMouseClicked
-        stateMachinePrix.afficherBouquetsPlus50();
+        stateMachinePrix.onMouseClickPlus50();
         this.refresh();
 }//GEN-LAST:event_highBtnMouseClicked
 
     private void littleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_littleBtnMouseClicked
-        stateMachineTaille.afficherBouquetsPetits();
+        stateMachineTaille.onMouseClickPetit();
         this.refresh();
     }//GEN-LAST:event_littleBtnMouseClicked
 
     private void middleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleBtnMouseClicked
-        stateMachineTaille.afficherBouquetsMoyens();
+        stateMachineTaille.onMouseClickMoyen();
         this.refresh();
     }//GEN-LAST:event_middleBtnMouseClicked
 
     private void bigBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bigBtnMouseClicked
-        stateMachineTaille.afficherBouquetsGrands();
+        stateMachineTaille.onMouseClickGrand();
         this.refresh();
     }//GEN-LAST:event_bigBtnMouseClicked
+
+    private void varieBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_varieBtnActionPerformed
+        stateMachineCouleur.onMouseClickVarie();
+        this.refresh();
+    }//GEN-LAST:event_varieBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -366,6 +385,7 @@ public class PageFleurs extends javax.swing.JPanel {
     private javax.swing.ButtonGroup priceGroup;
     private javax.swing.JRadioButton purpleBtn;
     private javax.swing.JRadioButton redBtn;
+    private javax.swing.JRadioButton varieBtn;
     private javax.swing.ButtonGroup varietyGroup;
     private javax.swing.JRadioButton whiteBtn;
     private javax.swing.JRadioButton yellowBtn;

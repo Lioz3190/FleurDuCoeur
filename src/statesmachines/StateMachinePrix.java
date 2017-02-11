@@ -37,6 +37,7 @@ public class StateMachinePrix {
                 //interdit
                 break;
             case ENTRE30_40 :
+                System.out.println("mouse click 30");
                 setState(StatePrix.MOINS30);
                 afficherBouquetsMoins30();
                 break;

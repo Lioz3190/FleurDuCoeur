@@ -61,6 +61,7 @@ public class StateMachineCouleur {
     }
     
     public void onMouseClickRouge () {
+        System.out.println("mouse click rouge");
         switch (myState) {
             case POPULAIRE :
                 setState(StateCouleur.ROUGE);
