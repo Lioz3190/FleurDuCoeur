@@ -85,7 +85,7 @@ public class Accueil extends javax.swing.JFrame {
 
         pageAccueil1.setPreferredSize(new java.awt.Dimension(500, 386));
         tabs.addTab("Accueil", pageAccueil1);
-        tabs.addTab("tab7", pageFleurs2);
+        tabs.addTab("Fleurs", pageFleurs2);
 
         javax.swing.GroupLayout bouquets1Layout = new javax.swing.GroupLayout(bouquets1);
         bouquets1.setLayout(bouquets1Layout);
