@@ -2,6 +2,7 @@ package fleurducoeur;
 
 
 import fleurducoeur.StateTaille;
+import java.util.ArrayList;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -17,9 +18,12 @@ public class StateMachineTaille {
     
     private StateTaille myState;
     
-    public StateMachineTaille () {
+    private ArrayList liste;
+    
+    public StateMachineTaille (ArrayList listeArticles) {
      
         myState = StateTaille.PETIT;
+        liste = listeArticles;
     }
     
     public void setState(StateTaille state){

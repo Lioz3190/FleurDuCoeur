@@ -7,6 +7,7 @@ package fleurducoeur;
 
 
 import java.awt.GridLayout;
+import java.util.ArrayList;
 
 /**
  *
@@ -15,18 +16,37 @@ import java.awt.GridLayout;
 public class PageFleurs extends javax.swing.JPanel {
 
 
-   
+    private StateMachineCouleur stateMachineCouleur;
+    private StateMachineTaille stateMachineTaille;
+    private StateMachinePrix stateMachinePrix;
+    
+    private ArrayList<ArticlePanel> listeArticles;
+    
     /**
      * Creates new form PageFleurs
      */
     public PageFleurs() {
         initComponents();
-        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
-        fleurs.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        
+        
+        listeArticles = new ArrayList<>();
+        
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rose", "./images/fleur.jpg",4)));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        listeArticles.add(new ArticlePanel(new Fleur("Amour", 15.60, "Rose", "Rouge", "./images/fleur.jpg",4)));
+        
+        
+        
+        stateMachineCouleur = new StateMachineCouleur(listeArticles);
+        stateMachinePrix = new StateMachinePrix(listeArticles);
+        stateMachineTaille = new StateMachineTaille(listeArticles);
+        
+        for (ArticlePanel art : listeArticles) {
+            fleurs.add(art);
+        }
         
     }
     

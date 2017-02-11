@@ -5,6 +5,8 @@
  */
 package fleurducoeur;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Lioz-MBPR
@@ -12,8 +14,11 @@ package fleurducoeur;
 public class StateMachineCouleur {
     private StateCouleur myState;
     
-    public StateMachineCouleur () {
+    private ArrayList<ArticlePanel> liste;
+    
+    public StateMachineCouleur (ArrayList listeArticles) {
         myState = StateCouleur.POPULAIRE;
+        liste = listeArticles;
     }
     
     public void setState (StateCouleur state) {
@@ -162,22 +167,61 @@ public class StateMachineCouleur {
     }
     
     public void afficherBouquetsRoses () {
-        
+        ArrayList temp = new ArrayList<>();
+        for (ArticlePanel article : liste) {
+            if (article.getArticle().getCouleur().equals("Rose")) {
+                temp.add(article);
+            }
+        }        
+        liste.removeAll(liste);
+        liste.addAll(temp);
     }
     
     public void afficherBouquetsRouges () {
+        ArrayList temp = new ArrayList<>();
+        for (ArticlePanel article : liste) {
+            if (article.getArticle().getCouleur().equals("Rouge")) {
+                temp.add(article);
+            }
+        }        
+        liste.removeAll(liste);
+        liste.addAll(temp);
         
     }
     
     public void afficherBouquetsBlanches () {
+        ArrayList temp = new ArrayList<>();
+        for (ArticlePanel article : liste) {
+            if (article.getArticle().getCouleur().equals("Blanche")) {
+                temp.add(article);
+            }
+        }        
+        liste.removeAll(liste);
+        liste.addAll(temp);
         
     }
     
     public void afficherBouquetsViolets () {
+        ArrayList temp = new ArrayList<>();
+        for (ArticlePanel article : liste) {
+            if (article.getArticle().getCouleur().equals("Violet")) {
+                temp.add(article);
+            }
+        }        
+        liste.removeAll(liste);
+        liste.addAll(temp);
         
     }
     
     public void afficherBouquetsVaries () {
+        ArrayList temp = new ArrayList<>();
+        for (ArticlePanel article : liste) {
+            if (article.getArticle().getCouleur().equals("Varie")) {
+                temp.add(article);
+            }
+        }        
+        liste.removeAll(liste);
+        liste.addAll(temp);
         
     }
 }

@@ -22,6 +22,7 @@ public class Accueil extends javax.swing.JFrame {
     /**
      * Creates new form Accueil
      */
+    
     public Accueil() {
         initComponents();
         
@@ -29,12 +30,11 @@ public class Accueil extends javax.swing.JFrame {
           public void stateChanged(ChangeEvent changeEvent) {
             JTabbedPane sourceTabbedPane = (JTabbedPane) changeEvent.getSource();
             int index = sourceTabbedPane.getSelectedIndex();
-            if (sourceTabbedPane.getTitleAt(index) == "tab7"){
+            if (sourceTabbedPane.getTitleAt(index) == "Fleurs"){
                 Container container1 = pageFleurs2;
                 container1.removeAll();
                 container1.add(new PageFleurs());
             }
-            //System.out.println("Tab changed to: " + sourceTabbedPane.getTitleAt(index));
           }
         };
         tabs.addChangeListener(changeListener);
