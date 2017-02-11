@@ -70,18 +70,43 @@ public class PageFleurs extends javax.swing.JPanel {
 
         colorGroup.add(whiteBtn);
         whiteBtn.setText("Blanc");
+        whiteBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                whiteBtnMouseClicked(evt);
+            }
+        });
 
         colorGroup.add(redBtn);
         redBtn.setText("Rouge");
+        redBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                redBtnMouseClicked(evt);
+            }
+        });
 
         colorGroup.add(pinkBtn);
         pinkBtn.setText("Rose");
+        pinkBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pinkBtnMouseClicked(evt);
+            }
+        });
 
         colorGroup.add(yellowBtn);
         yellowBtn.setText("Jaune");
+        yellowBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                yellowBtnMouseClicked(evt);
+            }
+        });
 
         colorGroup.add(purpleBtn);
         purpleBtn.setText("Violet");
+        purpleBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                purpleBtnMouseClicked(evt);
+            }
+        });
 
         jLabel1.setText("Couleur");
 
@@ -89,32 +114,77 @@ public class PageFleurs extends javax.swing.JPanel {
 
         priceGroup.add(lowBtn);
         lowBtn.setText("<30€");
+        lowBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lowBtnMouseClicked(evt);
+            }
+        });
 
         priceGroup.add(middleLowBtn);
         middleLowBtn.setText("30-40€");
+        middleLowBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                middleLowBtnMouseClicked(evt);
+            }
+        });
 
         priceGroup.add(middleHighBtn);
         middleHighBtn.setText("40-50€");
+        middleHighBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                middleHighBtnMouseClicked(evt);
+            }
+        });
 
         priceGroup.add(highBtn);
         highBtn.setText(">50€");
+        highBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                highBtnMouseClicked(evt);
+            }
+        });
 
         jLabel3.setText("Variété");
 
         varietyGroup.add(roseBtn);
         roseBtn.setText("Rose");
+        roseBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                roseBtnMouseClicked(evt);
+            }
+        });
 
         varietyGroup.add(lavandeBtn);
         lavandeBtn.setText("Lavande");
+        lavandeBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lavandeBtnMouseClicked(evt);
+            }
+        });
 
         varietyGroup.add(amaryllisBtn);
         amaryllisBtn.setText("Amaryllis");
+        amaryllisBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                amaryllisBtnMouseClicked(evt);
+            }
+        });
 
         varietyGroup.add(muguetBtn);
         muguetBtn.setText("Muguet");
+        muguetBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                muguetBtnMouseClicked(evt);
+            }
+        });
 
         varietyGroup.add(magueriteBtn);
         magueriteBtn.setText("Maguerite");
+        magueriteBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                magueriteBtnMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout filterLayout = new javax.swing.GroupLayout(filter);
         filter.setLayout(filterLayout);
@@ -199,6 +269,62 @@ public class PageFleurs extends javax.swing.JPanel {
         fleurs.setLayout(new java.awt.GridLayout(3, 3));
         add(fleurs, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void whiteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_whiteBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_whiteBtnMouseClicked
+
+    private void purpleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_purpleBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_purpleBtnMouseClicked
+
+    private void pinkBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pinkBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pinkBtnMouseClicked
+
+    private void yellowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yellowBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yellowBtnMouseClicked
+
+    private void redBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_redBtnMouseClicked
+
+    private void lowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lowBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lowBtnMouseClicked
+
+    private void middleLowBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleLowBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_middleLowBtnMouseClicked
+
+    private void middleHighBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleHighBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_middleHighBtnMouseClicked
+
+    private void highBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_highBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_highBtnMouseClicked
+
+    private void roseBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_roseBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_roseBtnMouseClicked
+
+    private void amaryllisBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_amaryllisBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_amaryllisBtnMouseClicked
+
+    private void muguetBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_muguetBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_muguetBtnMouseClicked
+
+    private void lavandeBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lavandeBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lavandeBtnMouseClicked
+
+    private void magueriteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_magueriteBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_magueriteBtnMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

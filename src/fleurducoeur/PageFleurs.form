@@ -141,6 +141,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Blanc"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="whiteBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="redBtn">
           <Properties>
@@ -149,6 +152,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Rouge"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="redBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="pinkBtn">
           <Properties>
@@ -157,6 +163,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Rose"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="pinkBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="yellowBtn">
           <Properties>
@@ -165,6 +174,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Jaune"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="yellowBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="purpleBtn">
           <Properties>
@@ -173,6 +185,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Violet"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="purpleBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
@@ -191,6 +206,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="&lt;30&#x20ac;"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lowBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="middleLowBtn">
           <Properties>
@@ -199,6 +217,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="30-40&#x20ac;"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="middleLowBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="middleHighBtn">
           <Properties>
@@ -207,6 +228,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="40-50&#x20ac;"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="middleHighBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="highBtn">
           <Properties>
@@ -215,6 +239,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="&gt;50&#x20ac;"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="highBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
@@ -228,6 +255,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Rose"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="roseBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="lavandeBtn">
           <Properties>
@@ -236,6 +266,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Lavande"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lavandeBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="amaryllisBtn">
           <Properties>
@@ -244,6 +277,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Amaryllis"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="amaryllisBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="muguetBtn">
           <Properties>
@@ -252,6 +288,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Muguet"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="muguetBtnMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="magueriteBtn">
           <Properties>
@@ -260,6 +299,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Maguerite"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="magueriteBtnMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

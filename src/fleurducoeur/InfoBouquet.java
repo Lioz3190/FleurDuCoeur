@@ -5,6 +5,7 @@
  */
 package fleurducoeur;
 
+import java.awt.Container;
 import javax.swing.ImageIcon;
 
 /**
@@ -153,7 +154,9 @@ public class InfoBouquet extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       
+        Container container1 = this.getParent();
+        container1.removeAll();
+        container1.add(new PageFleurs());
     }//GEN-LAST:event_jButton2ActionPerformed
 
 
