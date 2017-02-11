@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fleurducoeur;
+package pages;
 
 /**
  *
  * @author Lioz-MBPR
  */
-public class PageContact extends javax.swing.JPanel {
+public class PageRecupererSesFleurs extends javax.swing.JPanel {
 
     /**
-     * Creates new form Contact
+     * Creates new form RecupererSesFleurs
      */
-    public PageContact() {
+    public PageRecupererSesFleurs() {
         initComponents();
     }
 
@@ -29,23 +29,23 @@ public class PageContact extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("Contact");
+        jLabel1.setText("Carte de géolocalisation");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(97, 97, 97)
                 .addComponent(jLabel1)
-                .addContainerGap(315, Short.MAX_VALUE))
+                .addContainerGap(165, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(79, 79, 79)
                 .addComponent(jLabel1)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addContainerGap(206, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

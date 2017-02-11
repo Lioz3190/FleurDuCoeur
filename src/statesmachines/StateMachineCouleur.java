@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fleurducoeur;
+package statesmachines;
 
+import fleurducoeur.ArticlePanel;
+import pages.PageFleurs;
 import java.util.ArrayList;
 
 /**

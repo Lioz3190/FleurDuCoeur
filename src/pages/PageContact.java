@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fleurducoeur;
+package pages;
 
 /**
  *
  * @author Lioz-MBPR
  */
-public class PagePatience extends javax.swing.JPanel {
+public class PageContact extends javax.swing.JPanel {
 
     /**
-     * Creates new form Patience
+     * Creates new form Contact
      */
-    public PagePatience() {
+    public PageContact() {
         initComponents();
     }
 
@@ -29,23 +29,23 @@ public class PagePatience extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setText("Graines et bourgeons");
+        jLabel1.setText("Contact");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(135, 135, 135)
+                .addGap(42, 42, 42)
                 .addComponent(jLabel1)
-                .addContainerGap(141, Short.MAX_VALUE))
+                .addContainerGap(315, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(119, 119, 119)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel1)
-                .addContainerGap(166, Short.MAX_VALUE))
+                .addContainerGap(255, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

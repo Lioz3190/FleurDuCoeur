@@ -3,9 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fleurducoeur;
+package pages;
 
 
+import fleurducoeur.ArticlePanel;
+import objets.Fleur;
+import statesmachines.StateMachineCouleur;
+import statesmachines.StateMachineTaille;
+import statesmachines.StateMachinePrix;
 import java.awt.GridLayout;
 import java.util.ArrayList;
 

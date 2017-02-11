@@ -3,15 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fleurducoeur;
+package statesmachines;
 
 /**
  *
  * @author Lioz-MBPR
  */
-public enum StateTaille {
+public enum StateCouleur {
     POPULAIRE,
-    PETIT,
-    MOYEN,
-    GRAND;
+    ROSE,
+    ROUGE,
+    JAUNE,
+    VARIE,
+    VIOLET,
+    BLANCHE;
 }

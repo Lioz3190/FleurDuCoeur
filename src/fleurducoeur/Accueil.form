@@ -119,7 +119,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
           <SubComponents>
-            <Component class="fleurducoeur.PageAccueil" name="pageAccueil1">
+            <Component class="pages.PageAccueil" name="pageAccueil1">
               <Properties>
                 <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[500, 386]"/>
@@ -133,7 +133,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="fleurducoeur.PageFleurs" name="pageFleurs2">
+            <Component class="pages.PageFleurs" name="pageFleurs2">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                   <JTabbedPaneConstraints tabName="Fleurs">
@@ -142,7 +142,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Container class="fleurducoeur.PageBouquets" name="bouquets1">
+            <Container class="pages.PageBouquets" name="bouquets1">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                   <JTabbedPaneConstraints tabName="Cat&#xe9;gorie de bouquets">
@@ -164,7 +164,7 @@
                 </DimensionLayout>
               </Layout>
             </Container>
-            <Container class="fleurducoeur.PageOccasions" name="occasions1">
+            <Container class="pages.PageOccasions" name="occasions1">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                   <JTabbedPaneConstraints tabName="Occasions">
@@ -186,7 +186,7 @@
                 </DimensionLayout>
               </Layout>
             </Container>
-            <Component class="fleurducoeur.PagePatience" name="patience1">
+            <Component class="pages.PagePatience" name="patience1">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                   <JTabbedPaneConstraints tabName="Patience">
@@ -195,7 +195,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Container class="fleurducoeur.PageRecupererSesFleurs" name="recupererSesFleurs1">
+            <Container class="pages.PageRecupererSesFleurs" name="recupererSesFleurs1">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                   <JTabbedPaneConstraints tabName="O&#xf9; r&#xe9;cup&#xe9;rer ses fleurs ?">
@@ -217,7 +217,7 @@
                 </DimensionLayout>
               </Layout>
             </Container>
-            <Component class="fleurducoeur.PagePanier" name="pagePanier2">
+            <Component class="pages.PagePanier" name="pagePanier2">
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
                   <JTabbedPaneConstraints tabName="Panier">

@@ -5,6 +5,7 @@
  */
 package fleurducoeur;
 
+import pages.PageFleurs;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.image.BufferedImage;
@@ -54,13 +55,13 @@ public class Accueil extends javax.swing.JFrame {
         enTetePanel = new javax.swing.JPanel();
         buttunAccueil = new javax.swing.JButton();
         tabs = new javax.swing.JTabbedPane();
-        pageAccueil1 = new fleurducoeur.PageAccueil();
-        pageFleurs2 = new fleurducoeur.PageFleurs();
-        bouquets1 = new fleurducoeur.PageBouquets();
-        occasions1 = new fleurducoeur.PageOccasions();
-        patience1 = new fleurducoeur.PagePatience();
-        recupererSesFleurs1 = new fleurducoeur.PageRecupererSesFleurs();
-        pagePanier2 = new fleurducoeur.PagePanier();
+        pageAccueil1 = new pages.PageAccueil();
+        pageFleurs2 = new pages.PageFleurs();
+        bouquets1 = new pages.PageBouquets();
+        occasions1 = new pages.PageOccasions();
+        patience1 = new pages.PagePatience();
+        recupererSesFleurs1 = new pages.PageRecupererSesFleurs();
+        pagePanier2 = new pages.PagePanier();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FleurDuCoeur");
@@ -214,16 +215,16 @@ public class Accueil extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private fleurducoeur.PageBouquets bouquets1;
+    private pages.PageBouquets bouquets1;
     private javax.swing.JButton buttunAccueil;
     private javax.swing.JPanel container;
     private javax.swing.JPanel enTetePanel;
-    private fleurducoeur.PageOccasions occasions1;
-    private fleurducoeur.PageAccueil pageAccueil1;
-    private fleurducoeur.PageFleurs pageFleurs2;
-    private fleurducoeur.PagePanier pagePanier2;
-    private fleurducoeur.PagePatience patience1;
-    private fleurducoeur.PageRecupererSesFleurs recupererSesFleurs1;
+    private pages.PageOccasions occasions1;
+    private pages.PageAccueil pageAccueil1;
+    private pages.PageFleurs pageFleurs2;
+    private pages.PagePanier pagePanier2;
+    private pages.PagePatience patience1;
+    private pages.PageRecupererSesFleurs recupererSesFleurs1;
     private javax.swing.JTabbedPane tabs;
     // End of variables declaration//GEN-END:variables
 }

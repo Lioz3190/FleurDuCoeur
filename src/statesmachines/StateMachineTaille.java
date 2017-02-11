@@ -1,7 +1,9 @@
-package fleurducoeur;
+package statesmachines;
 
 
-import fleurducoeur.StateTaille;
+import fleurducoeur.ArticlePanel;
+import pages.PageFleurs;
+import statesmachines.StateTaille;
 import java.util.ArrayList;
 
 /*

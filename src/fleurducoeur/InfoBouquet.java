@@ -5,6 +5,8 @@
  */
 package fleurducoeur;
 
+import objets.Fleur;
+import pages.PageFleurs;
 import java.awt.Container;
 import javax.swing.ImageIcon;
 
