@@ -19,7 +19,7 @@ public class ArticlePanel extends javax.swing.JPanel {
     public ArticlePanel(Article article) {
         initComponents();
         this.article = article;
-        price.setText(toString(article.getPrix()));
+        price.setText(article.getPrix() + "");
     }
     
     public String toString(float prix){

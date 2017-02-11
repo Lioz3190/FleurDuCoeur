@@ -11,9 +11,9 @@ package fleurducoeur;
  */
 public class Article {
     private String adresseImage;
-    private float prix;
+    private double prix;
 
-    public Article (String a, float p){
+    public Article (String a, double p){
         this.adresseImage = a;
         this.prix = p;
     }
@@ -26,11 +26,11 @@ public class Article {
         this.adresseImage = adresseImage;
     }
 
-    public float getPrix() {
+    public double getPrix() {
         return prix;
     }
 
-    public void setPrix(float prix) {
+    public void setPrix(double prix) {
         this.prix = prix;
     }
     

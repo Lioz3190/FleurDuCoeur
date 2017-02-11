@@ -39,6 +39,11 @@ public class Accueil extends javax.swing.JFrame {
         tabs = new javax.swing.JTabbedPane();
         pageAccueil1 = new fleurducoeur.PageAccueil();
         pageFleurs1 = new fleurducoeur.PageFleurs();
+        bouquets1 = new fleurducoeur.Bouquets();
+        occasions1 = new fleurducoeur.Occasions();
+        patience1 = new fleurducoeur.Patience();
+        recupererSesFleurs1 = new fleurducoeur.RecupererSesFleurs();
+        panier1 = new fleurducoeur.Panier();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("FleurDuCoeur");
@@ -92,6 +97,59 @@ public class Accueil extends javax.swing.JFrame {
         );
 
         tabs.addTab("Fleurs", pageFleurs1);
+
+        javax.swing.GroupLayout bouquets1Layout = new javax.swing.GroupLayout(bouquets1);
+        bouquets1.setLayout(bouquets1Layout);
+        bouquets1Layout.setHorizontalGroup(
+            bouquets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1908, Short.MAX_VALUE)
+        );
+        bouquets1Layout.setVerticalGroup(
+            bouquets1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 985, Short.MAX_VALUE)
+        );
+
+        tabs.addTab("Catégorie de bouquets", bouquets1);
+
+        javax.swing.GroupLayout occasions1Layout = new javax.swing.GroupLayout(occasions1);
+        occasions1.setLayout(occasions1Layout);
+        occasions1Layout.setHorizontalGroup(
+            occasions1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1908, Short.MAX_VALUE)
+        );
+        occasions1Layout.setVerticalGroup(
+            occasions1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 985, Short.MAX_VALUE)
+        );
+
+        tabs.addTab("Occasions", occasions1);
+        tabs.addTab("Patience", patience1);
+
+        javax.swing.GroupLayout recupererSesFleurs1Layout = new javax.swing.GroupLayout(recupererSesFleurs1);
+        recupererSesFleurs1.setLayout(recupererSesFleurs1Layout);
+        recupererSesFleurs1Layout.setHorizontalGroup(
+            recupererSesFleurs1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1908, Short.MAX_VALUE)
+        );
+        recupererSesFleurs1Layout.setVerticalGroup(
+            recupererSesFleurs1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 985, Short.MAX_VALUE)
+        );
+
+        tabs.addTab("Où récupérer ses fleurs ?", recupererSesFleurs1);
+
+        javax.swing.GroupLayout panier1Layout = new javax.swing.GroupLayout(panier1);
+        panier1.setLayout(panier1Layout);
+        panier1Layout.setHorizontalGroup(
+            panier1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1908, Short.MAX_VALUE)
+        );
+        panier1Layout.setVerticalGroup(
+            panier1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 985, Short.MAX_VALUE)
+        );
+
+        tabs.addTab("Panier", panier1);
 
         container.add(tabs, java.awt.BorderLayout.CENTER);
         tabs.getAccessibleContext().setAccessibleName("Accueil");
@@ -163,13 +221,18 @@ public class Accueil extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private fleurducoeur.Bouquets bouquets1;
     private javax.swing.JButton boutonAccueil;
     private javax.swing.JButton buttunAccueil;
     private javax.swing.JPanel container;
     private javax.swing.JPanel enTetePanel;
     private java.awt.Panel enTetePanel1;
+    private fleurducoeur.Occasions occasions1;
     private fleurducoeur.PageAccueil pageAccueil1;
     private fleurducoeur.PageFleurs pageFleurs1;
+    private fleurducoeur.Panier panier1;
+    private fleurducoeur.Patience patience1;
+    private fleurducoeur.RecupererSesFleurs recupererSesFleurs1;
     private javax.swing.JTabbedPane tabs;
     // End of variables declaration//GEN-END:variables
 }
