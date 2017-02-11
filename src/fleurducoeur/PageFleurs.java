@@ -56,11 +56,9 @@ public class PageFleurs extends javax.swing.JPanel {
         middleHighBtn = new javax.swing.JRadioButton();
         highBtn = new javax.swing.JRadioButton();
         jLabel3 = new javax.swing.JLabel();
-        roseBtn = new javax.swing.JRadioButton();
-        lavandeBtn = new javax.swing.JRadioButton();
-        amaryllisBtn = new javax.swing.JRadioButton();
-        muguetBtn = new javax.swing.JRadioButton();
-        magueriteBtn = new javax.swing.JRadioButton();
+        littleBtn = new javax.swing.JRadioButton();
+        middleBtn = new javax.swing.JRadioButton();
+        bigBtn = new javax.swing.JRadioButton();
         fleurs = new javax.swing.JPanel();
 
         setLayout(new java.awt.BorderLayout());
@@ -144,45 +142,29 @@ public class PageFleurs extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setText("Variété");
+        jLabel3.setText("Taille");
 
-        varietyGroup.add(roseBtn);
-        roseBtn.setText("Rose");
-        roseBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        varietyGroup.add(littleBtn);
+        littleBtn.setText("Petit");
+        littleBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                roseBtnMouseClicked(evt);
+                littleBtnMouseClicked(evt);
             }
         });
 
-        varietyGroup.add(lavandeBtn);
-        lavandeBtn.setText("Lavande");
-        lavandeBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        varietyGroup.add(middleBtn);
+        middleBtn.setText("Moyen");
+        middleBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lavandeBtnMouseClicked(evt);
+                middleBtnMouseClicked(evt);
             }
         });
 
-        varietyGroup.add(amaryllisBtn);
-        amaryllisBtn.setText("Amaryllis");
-        amaryllisBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        varietyGroup.add(bigBtn);
+        bigBtn.setText("Grand");
+        bigBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                amaryllisBtnMouseClicked(evt);
-            }
-        });
-
-        varietyGroup.add(muguetBtn);
-        muguetBtn.setText("Muguet");
-        muguetBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                muguetBtnMouseClicked(evt);
-            }
-        });
-
-        varietyGroup.add(magueriteBtn);
-        magueriteBtn.setText("Maguerite");
-        magueriteBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                magueriteBtnMouseClicked(evt);
+                bigBtnMouseClicked(evt);
             }
         });
 
@@ -209,20 +191,14 @@ public class PageFleurs extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(yellowBtn))
                     .addComponent(jLabel3)
-                    .addGroup(filterLayout.createSequentialGroup()
-                        .addComponent(roseBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(amaryllisBtn))
+                    .addComponent(littleBtn)
                     .addGroup(filterLayout.createSequentialGroup()
                         .addComponent(middleHighBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(highBtn))
-                    .addGroup(filterLayout.createSequentialGroup()
-                        .addComponent(muguetBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lavandeBtn))
-                    .addComponent(magueriteBtn))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(bigBtn)
+                    .addComponent(middleBtn))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         filterLayout.setVerticalGroup(
             filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -252,15 +228,11 @@ public class PageFleurs extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(roseBtn)
-                    .addComponent(amaryllisBtn))
+                .addComponent(littleBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(filterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(muguetBtn)
-                    .addComponent(lavandeBtn))
+                .addComponent(middleBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(magueriteBtn)
+                .addComponent(bigBtn)
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -306,29 +278,21 @@ public class PageFleurs extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_highBtnMouseClicked
 
-    private void roseBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_roseBtnMouseClicked
+    private void littleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_littleBtnMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_roseBtnMouseClicked
+    }//GEN-LAST:event_littleBtnMouseClicked
 
-    private void amaryllisBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_amaryllisBtnMouseClicked
+    private void middleBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleBtnMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_amaryllisBtnMouseClicked
+    }//GEN-LAST:event_middleBtnMouseClicked
 
-    private void muguetBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_muguetBtnMouseClicked
+    private void bigBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bigBtnMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_muguetBtnMouseClicked
-
-    private void lavandeBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lavandeBtnMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lavandeBtnMouseClicked
-
-    private void magueriteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_magueriteBtnMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_magueriteBtnMouseClicked
+    }//GEN-LAST:event_bigBtnMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton amaryllisBtn;
+    private javax.swing.JRadioButton bigBtn;
     private javax.swing.ButtonGroup colorGroup;
     private javax.swing.JPanel filter;
     private javax.swing.JPanel fleurs;
@@ -336,17 +300,15 @@ public class PageFleurs extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JRadioButton lavandeBtn;
+    private javax.swing.JRadioButton littleBtn;
     private javax.swing.JRadioButton lowBtn;
-    private javax.swing.JRadioButton magueriteBtn;
+    private javax.swing.JRadioButton middleBtn;
     private javax.swing.JRadioButton middleHighBtn;
     private javax.swing.JRadioButton middleLowBtn;
-    private javax.swing.JRadioButton muguetBtn;
     private javax.swing.JRadioButton pinkBtn;
     private javax.swing.ButtonGroup priceGroup;
     private javax.swing.JRadioButton purpleBtn;
     private javax.swing.JRadioButton redBtn;
-    private javax.swing.JRadioButton roseBtn;
     private javax.swing.ButtonGroup varietyGroup;
     private javax.swing.JRadioButton whiteBtn;
     private javax.swing.JRadioButton yellowBtn;

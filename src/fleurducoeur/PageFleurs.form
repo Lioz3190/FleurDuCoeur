@@ -64,24 +64,16 @@
                           <Component id="yellowBtn" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="roseBtn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="amaryllisBtn" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="littleBtn" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="middleHighBtn" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="highBtn" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="muguetBtn" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="lavandeBtn" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="magueriteBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="bigBtn" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="middleBtn" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -117,17 +109,11 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="roseBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="amaryllisBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="littleBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="muguetBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lavandeBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="middleBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="magueriteBtn" min="-2" max="-2" attributes="0"/>
+                  <Component id="bigBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="13" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -245,62 +231,40 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Vari&#xe9;t&#xe9;"/>
+            <Property name="text" type="java.lang.String" value="Taille"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="roseBtn">
+        <Component class="javax.swing.JRadioButton" name="littleBtn">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="varietyGroup"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Rose"/>
+            <Property name="text" type="java.lang.String" value="Petit"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="roseBtnMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="littleBtnMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="lavandeBtn">
+        <Component class="javax.swing.JRadioButton" name="middleBtn">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="varietyGroup"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Lavande"/>
+            <Property name="text" type="java.lang.String" value="Moyen"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lavandeBtnMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="middleBtnMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="amaryllisBtn">
+        <Component class="javax.swing.JRadioButton" name="bigBtn">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="varietyGroup"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Amaryllis"/>
+            <Property name="text" type="java.lang.String" value="Grand"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="amaryllisBtnMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="muguetBtn">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="varietyGroup"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Muguet"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="muguetBtnMouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="magueriteBtn">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="varietyGroup"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Maguerite"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="magueriteBtnMouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bigBtnMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>
