@@ -16,6 +16,7 @@ public class FleurDuCoeur {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new Accueil().setVisible(true);
     }
     
 }
