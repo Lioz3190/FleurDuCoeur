@@ -11,7 +11,6 @@ import objets.Fleur;
 import statesmachines.StateMachineCouleur;
 import statesmachines.StateMachineTaille;
 import statesmachines.StateMachinePrix;
-import java.awt.GridLayout;
 import java.util.ArrayList;
 
 /**
